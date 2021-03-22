@@ -55,6 +55,7 @@ games back to 1985 and detailed game stats back to 2003.
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating_deviation.svg)
    
    The Glicko rating can then be calculated using the following formula.
+   
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating.svg)
    
    where:
@@ -66,4 +67,11 @@ games back to 1985 and detailed game stats back to 2003.
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/q.svg)
    
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/d2.svg)
+   
+   ri represent the rating of the opponenets
+   si represents the outcome of each match, Win:1, Tie:0.5, Loss:0
+   
+   # Bracket
+   
+   
    
