@@ -48,3 +48,5 @@ games back to 1985 and detailed game stats back to 2003.
    of each team (higher C). We can then use logistic regression to get a final probablity of the outcome of the game.
    
    # Glicko
+   
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating_deviation.svg)
