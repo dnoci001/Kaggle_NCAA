@@ -48,5 +48,16 @@ games back to 1985 and detailed game stats back to 2003.
    of each team (higher C). We can then use logistic regression to get a final probablity of the outcome of the game.
    
    # Glicko
-   
+   To calculate the glicko rating we must first compute the rating deviation for each competitor. This is where the C parameter from 
+   above comes into play. One of the benefits of Glicko is that the rating deviation provides a range around the current rating 
+   describing each competitor, instead of a fixed value like in the Elo system.
+  
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating_deviation.svg)
+   
+   The Glicko rating can then be calculated using the following formula.
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating.svg)
+   where:
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/grd.svg)
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/E.svg)
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/q.svg)
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/d2.svg)
