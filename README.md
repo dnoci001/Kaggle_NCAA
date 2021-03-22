@@ -72,6 +72,10 @@ games back to 1985 and detailed game stats back to 2003.
    si represents the outcome of each match, Win:1, Tie:0.5, Loss:0
    
    # Bracket
+   Womens Bracket
+   
+   ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/WNCAA.png)
+   
    
    
    
