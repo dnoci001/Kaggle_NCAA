@@ -7,19 +7,19 @@ team mach-ups in the tournament. Kaggle has provided historical data of wins in 
 games back to 1985 and detailed game stats back to 2003.
 
 ## Detailed Game Stats
-    #FGM - field goals made (by the winning team)
-    #FGA - field goals attempted (by the winning team)
-    #FGM3 - three pointers made (by the winning team)
-    #FGA3 - three pointers attempted (by the winning team)
-    #FTM - free throws made (by the winning team)
-    #FTA - free throws attempted (by the winning team)
-    #OR - offensive rebounds (pulled by the winning team)
-    #DR - defensive rebounds (pulled by the winning team)
-    #Ast - assists (by the winning team)
-    #TO - turnovers committed (by the winning team)
-    #Stl - steals (accomplished by the winning team)
-    #Blk - blocks (accomplished by the winning team)
-    #PF - personal fouls committed (by the winning team)
+    * FGM - field goals made (by the winning team)
+    * FGA - field goals attempted (by the winning team)
+    * FGM3 - three pointers made (by the winning team)
+    * FGA3 - three pointers attempted (by the winning team)
+    * FTM - free throws made (by the winning team)
+    * FTA - free throws attempted (by the winning team)
+    * OR - offensive rebounds (pulled by the winning team)
+    * DR - defensive rebounds (pulled by the winning team)
+    * Ast - assists (by the winning team)
+    * TO - turnovers committed (by the winning team)
+    * Stl - steals (accomplished by the winning team)
+    * Blk - blocks (accomplished by the winning team)
+    * PF - personal fouls committed (by the winning team)
     
 ## Method
     
