@@ -56,8 +56,14 @@ games back to 1985 and detailed game stats back to 2003.
    
    The Glicko rating can then be calculated using the following formula.
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/rating.svg)
+   
    where:
+   
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/grd.svg)
+   
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/E.svg)
+   
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/q.svg)
+   
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/d2.svg)
+   
