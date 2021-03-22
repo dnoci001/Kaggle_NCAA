@@ -25,14 +25,13 @@ games back to 1985 and detailed game stats back to 2003.
     
    A common method is to apply a ranking metric to each competitor and predict the outcome using some combination 
    of the rankings. Commonly used metrics are Elo and Glicko. One of the shortcomings of these metrics is the need
-   for a user to designate a parameter (C) for the sensitivity to recent vs. historical matches. There are strong 
-   arguments for the what the optimal value of this parameter might be given the context. To bypass this shortcoming
-   we will compute glicko ratings using multiple values of this parameter and make our prediction using an ensemble 
+   for a user to designate a parameter (C) for the sensitivity to recent vs. historical matches. To bypass this 
+   shortcoming we will compute glicko ratings using multiple values of this parameter and make our prediction using an ensemble 
    of glicko ratings. 
    
    Commonly these rating systems are just applied to the win state of competitors, but they aren't
    inherintly limited to just that, so we will update a rating after each game for all statistics given in the detailed 
-   game file. This will allow us to capture more of the nuance to the games. Ex. Maybe TeamA lost to TeamB, but they out
+   game file. This will allow us to capture more of the nuance of the games. Ex. Maybe TeamA lost to TeamB, but they out
    performed in their FGM3, so by considering all stats we develop a more detailed picture of each teams strengths and 
    weaknesses. 
    
