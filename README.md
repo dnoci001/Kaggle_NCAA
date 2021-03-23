@@ -1,8 +1,8 @@
 # Kaggle_NCAA
-Predict Win Probablities in NCAA March Madness Tournament
+Predict Win Probabilities in NCAA March Madness Tournament
 
-Yearly Mens and Womens College Basketball host 'March Madness' where the top ranked 64 teams compete. 
-Kaggle has hosted their own competition inviting data scientist to predict win probablities for all possible 
+Yearly Men’s and Women’s College Basketball host 'March Madness' where the top ranked 64 teams compete. 
+Kaggle has hosted their own competition inviting data scientist to predict win probabilities for all possible 
 team mach-ups in the tournament. Kaggle has provided historical data of wins in losses of regular season 
 games back to 1985 and detailed game stats back to 2003.
 
@@ -26,28 +26,28 @@ games back to 1985 and detailed game stats back to 2003.
    A common method is to apply a ranking metric to each competitor and predict the outcome using some combination 
    of the rankings. Commonly used metrics are Elo and Glicko. One of the shortcomings of these metrics is the need
    for a user to designate a parameter (C) for the sensitivity to recent vs. historical matches. To bypass this 
-   shortcoming we will compute glicko ratings using multiple values of this parameter and make our prediction using an ensemble 
-   of glicko ratings. 
+   shortcoming we will compute Glicko ratings using multiple values of this parameter and make our prediction using an ensemble 
+   of Glicko ratings. 
    
    Commonly these rating systems are just applied to the win state of competitors, but they aren't
-   inherintly limited to just that, so we will update a rating after each game for all statistics given in the detailed 
-   game file. This will allow us to capture more of the nuance of the games. Ex. Maybe TeamA lost to TeamB, but they out
+   inherently limited to just that, so we will update a rating after each game for all statistics given in the detailed 
+   game file. This will allow us to capture more of the nuance of the games. Ex. Maybe Team A lost to Team B, but they out
    performed in their FGM3, so by considering all stats we develop a more detailed picture of each teams strengths and 
    weaknesses. 
    
    We will then calculate the covariate matrix for these rankings from the regular season games. This will be used with numpy's
    multivariate sampling to simulate games between competitors. We now can get believable rankings for each competitor and how 
-   they might vary relative to whome they are competing against, but we need a method to combine these to a final metric to 
+   they might vary relative to whom they are competing against, but we need a method to combine these to a final metric to 
    determine the outcome our simulated game. I have decided to use the 'GameScore' metric which was a linear combination of the
-   stats we ranked. Since it isn't clear that the combination coefficets for the stats would also be appropriate for our ranking
-   of these stats we will revaluate appropriate coefficets.
+   stats we ranked. Since it isn't clear that the combination coefficients for the stats would also be appropriate for our ranking
+   of these stats we will reevaluate appropriate coefficients.
    
    We can then simulate thousands of games for each match-up for all Glicko ratings using different C values. Giving use a picture 
    of game outcome between a more historical representation of each team (lower C), to a picture of more recent representation
-   of each team (higher C). We can then use logistic regression to get a final probablity of the outcome of the game.
+   of each team (higher C). We can then use logistic regression to get a final probability of the outcome of the game.
    
    # Glicko
-   To calculate the glicko rating we must first compute the rating deviation for each competitor. This is where the C parameter from 
+   To calculate the Glicko rating we must first compute the rating deviation for each competitor. This is where the C parameter from 
    above comes into play. One of the benefits of Glicko is that the rating deviation provides a range around the current rating 
    describing each competitor, instead of a fixed value like in the Elo system.
   
@@ -67,16 +67,16 @@ games back to 1985 and detailed game stats back to 2003.
    
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/d2.svg)
    
-   ri represent the rating of the opponenets
+   ri represent the rating of the opponents
    
    si represents the outcome of each match, Win:1, Tie:0.5, Loss:0
    
    # Bracket
-   Womens Bracket
+   Women's Bracket
    
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/WNCAA.png)
    
-   Mens Bracket
+   Men’s Bracket
    
    ![](https://github.com/dnoci001/Kaggle_NCAA/blob/main/images/MNCAA.png)
    
