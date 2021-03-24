@@ -42,7 +42,7 @@ games back to 1985 and detailed game stats back to 2003.
    stats we ranked. Since it isn't clear that the combination coefficients for the stats would also be appropriate for our ranking
    of these stats we will reevaluate appropriate coefficients.
    
-   We can then simulate thousands of games for each match-up for all Glicko ratings using different C values. Giving use a picture 
+   We can then simulate thousands of games for each match-up for all Glicko ratings using different C values. Giving us a picture 
    of game outcome between a more historical representation of each team (lower C), to a picture of more recent representation
    of each team (higher C). We can then use logistic regression to get a final probability of the outcome of the game.
    
